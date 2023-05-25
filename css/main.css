@@ -3,10 +3,20 @@
     right: 4em;
 }
 
+.filter {
+    position: relative;
+    margin-left: 7rem;
+}
+
 @media screen and (min-width: 1800px) {
 .button__main {
     position: absolute;
     right: 38rem;
 }
     
+
+.filter {
+    position: relative;
+    margin-left: 12rem;
+}
 }
