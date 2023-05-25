@@ -66,8 +66,182 @@
         </div>
     </nav>
 
-    <a href="./dokumentace.html" type="button" class="btn btn-success mt-4 button__main">+
-        Přidat novou dokumentaci</a>
+    <!--Modal Button-->
+    <button type="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">+
+        Přidat novou dokumentaci</button>
+
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="box-shadow: 5px 10px silver;">
+        <div class="modal-header" style="display: flex; flex-direction: column;">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+          
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+          
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                <input class="form-control" type="file" id="formFile">
+          
+                <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                <div style="display: flex;" class="mb-2">
+                  <!--<br>
+                <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                  <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
+                    aria-label="Username" aria-describedby="basic-addon1">
+          
+          
+                  <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
+                    barvu</label>
+                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#4F7942"
+                    title="Choose your color">
+                </div>
+          
+                <label for="customRange1" class="form-label">Vyber skupinu</label>
+                <br>
+                  <select type="text" class="form-control me-3" style="width: 33%;">
+                    <option class="dropdown-item">Vyber</option>
+                    <option class="dropdown-item">Most Readed</option>
+                    <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                    <option class="dropdown-item">Further Documentation</option>
+                    <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                  </select>
+                  
+                  <div style="display: flex; align-items: center;">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="position: relative; top: 3px;">
+                    Jazyková verze
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                    <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>-->
+                    <li><a class="dropdown-item" href="#">Němčina</a></li>
+                    <li><a class="dropdown-item" href="#">Čeština</a></li>
+                    <li><a class="dropdown-item" href="#">Španělština</a></li>
+                    <li><a class="dropdown-item" href="#">Italština</a></li>
+                  </ul>
+          
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12" style="text-align: center">
+                        <input type="date" name="date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="mb-5">
+        <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+          style="position:absolute; right: 9rem;">Zrušit</a>
+        <a href="./main_2.html" type="button" class="btn btn-success mt-1" style="position:absolute; right: 4rem;">Hotovo</a>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Modal 2-->
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="box-shadow: 5px 10px silver;">
+        <div class="modal-header" style="display: flex; flex-direction: column;">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                  value="Název Dokumentace v češtině" aria-describedby="basic-addon1">
+              </div>
+          
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                  value="Krátký popis v češtině" aria-describedby="basic-addon1">
+              </div>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+          
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                <input class="form-control" type="file" id="formFile">
+          
+                <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                <div style="display: flex;" class="mb-2">
+                  <!--<br>
+                <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                  <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
+                  value="rgb(86,61, 124)" aria-label="Username" aria-describedby="basic-addon1">
+          
+          
+                  <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
+                    barvu</label>
+                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                    title="Choose your color">
+                </div>
+          
+                <label for="customRange1" class="form-label">Vyber skupinu</label>
+                <br>
+                  <select type="text" class="form-control me-3" style="width: 33%;">
+                    <option class="dropdown-item">Vyber</option>
+                    <option class="dropdown-item">Most Readed</option>
+                    <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                    <option class="dropdown-item">Further Documentation</option>
+                    <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                  </select>
+                  
+                  <div style="display: flex; align-items: center;">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="position: relative; top: 3px;">
+                    Jazyková verze
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                    <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>-->
+                    <li><a class="dropdown-item" href="#">Němčina</a></li>
+                    <li><a class="dropdown-item" href="#">Čeština</a></li>
+                    <li><a class="dropdown-item" href="#">Španělština</a></li>
+                    <li><a class="dropdown-item" href="#">Italština</a></li>
+                  </ul>
+          
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12" style="text-align: center">
+                        <input type="date" name="date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="mb-5">
+        <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+          style="position:absolute; right: 9rem;">Zrušit</a>
+        <a href="./main_2.html" type="button" class="btn btn-success mt-1" style="position:absolute; right: 4rem;">Hotovo</a>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <h2>Dokumentace</h2>
     <div class="container border mt-0 bg-light text-dark" style="box-shadow: 5px 10px silver;">
@@ -109,8 +283,8 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-3 mb-3"
+                    <button type="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</button>
+                    <a href="#" style="position: relative; left: 5rem; top: .6rem;"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-3 mb-3"
                             style="height: 2rem;"></a>
                     <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
