@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="icon" href="./../imgs/logo-xc.png.ico">
+</head>
+
+<body style="background-color: white;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #DCDCDC; z-index: 1;"> /<!--bg-body-tertiary-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./../imgs/logo-xc.png.png" style="height: 2rem;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./dokumentace.html">Nová Dokumentace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./release_notes.html">Nové Release Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./main.html">Zobrazit v tabulce</a>
+                    </li>
+                    <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>-->
+                </ul>
+                <!--
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+                <a class="btn btn-outline-danger" type="submit" href="./../index.html">Odhlásit se</a>
+                <!--</form>
+      -->
+            </div>
+        </div>
+    </nav>
+
+    <a href="./dokumentace.html" type="button" class="btn btn-success mt-5 button__main">+
+        Přidat novou dokumentaci</a>
+
+    <h2 class="mt-5 ms-2">Dokumentace</h2>
+    <div class="container border mt-0 bg-light text-dark" style="box-shadow: 5px 10px silver;">
+
+        <div style="display: flex; align-items: center;">
+            <div class="container-fluid mt-1" style="width: 30%; display: flex; position: relative; left: 24rem;">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            style="position: relative; bottom: 2rem; left: 970px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-funnel filter" viewBox="0 0 16 16">
+                <path
+                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+            </svg>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Most Readed</a></li>
+            <li><a class="dropdown-item" href="#">Further Documentation</a></li>
+            <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
+        </ul>
+        <div style="display: flex;">
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(violet, purple); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-right card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #457</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgreen, pink); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #456</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgrey, yellow); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #455</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(yellow, orange); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #398</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(orange, red); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">	D #374</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightblue, blue); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #352</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(violet, magenta); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-right card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #328</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(pink, purple); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #303</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(yellowgreen, lightgreen); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #281</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(yellow, yellowgreen); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">D #205</h5>
+                    <div class="mb-0">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaká poznámka.</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <p class="mb-0">Most Readed</p>
+                    <p class="mb-0">23. 4. 2023</p>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1"
+                            style="height: 2rem;"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="./dokumentace.html" type="button" class="btn btn-success mt-3 button__main">+
+        Přidat nové Release Notes</a>
+
+    <h2 class="mt-2 ms-2">Release Notes</h2>
+    <div class="container border mt-3 bg-light text-dark" style="box-shadow: 5px 10px silver;">
+
+        <div style="display: flex; align-items: center;">
+            <div class="container-fluid mt-1" style="width: 30%; display: flex; position: relative; left: 25rem;">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(violet, purple); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-right card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #17052023</h5>
+                    <p></p>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgreen, pink); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #13062023</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgrey, yellow); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #01052023</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(yellow, orange); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #03022022</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(orange, red); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #29012022</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightblue, blue); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #17122021</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgreen, yellowgreen); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-right card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">	RN #07112021</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 26rem; background-image: linear-gradient(pink, deepskyblue); box-shadow: 5px 5px silver;">
+                <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
+                <div class="card-body">
+                    <h5 class="card-title">RN #03022022</h5>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="NULL">Nějaký popis</textarea>
+                        </div>
+                        <div class="form-text" id="basic-addon4"></div>
+                    </div>
+                    <a href="./uprava_existujiciho.html" class="btn btn-success">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
+                            style="height: 2.1rem;"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="py-3 mt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Domů</a></li>
+            <li class="nav-item"><a href="./dokumentace.html" class="nav-link px-2 text-body-secondary">Nová
+                    Dokumentace</a></li>
+            <li class="nav-item"><a href="./release_notes.html" class="nav-link px-2 text-body-secondary">Nové Release
+                    Notes</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Mailprofiler</p>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</html>
