@@ -70,7 +70,7 @@
     <button type="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">+
         Přidat novou dokumentaci</button>
 
-    <!-- Modal -->
+<!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content" style="box-shadow: 5px 10px silver;">
@@ -156,6 +156,7 @@
       </div>
     </div>
   </div>
+
 <!--Modal 2-->
   <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -243,6 +244,107 @@
     </div>
   </div>
 
+<!-- Modal 3-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="box-shadow: 5px 10px silver;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">D #457</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Nějaký popis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam quis nulla. Aenean fermentum risus id tortor.
+             Praesent dapibus. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Nullam sit amet magna in magna gravida vehicula. Praesent id justo in neque elementum ultrices.</p>
+          <p style="font-size: .8rem;">Most Readed</p>
+          <p style="font-size: .8rem;">23. 4. 2023</p>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Zavřít</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Modal 4-->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="box-shadow: 5px 10px silver;">
+        <div class="modal-header">
+            <div class="input-group mb-3">
+                <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název" value="Anglický název vyplněný == RN #482">
+                <input type="text" aria-label="First name" class="form-control" placeholder="Český název" value="Český název vyplněný == RN #457">
+                <input type="text" aria-label="First name" class="form-control" placeholder="Německý název" value="Německý název vyplněný == RN #434">
+              </div>
+
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Anglický popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Anglický popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Anglický popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+<div style="display: flex;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  style="position: relative; top: 3px;">
+                  Jazyková verze
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                  <!--<li><hr class="dropdown-divider"></li>-->
+                  <li><a class="dropdown-item" href="#">Čeština</a></li>
+                  <li><a class="dropdown-item" href="#">Němčina</a></li>
+                </ul>
+
+                <div>
+                    <div style="display: flex;">
+                      <label for="exampleColorInput" class="form-label me-0 ms-2" style="text-align: center; width: 10em;">Release
+                        Date:</label>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-12" style="text-align: center">
+                            <input type="date" name="date">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</div>
+        </div>
+        <div class="modal-footer mb-5">
+
+        <a href="#" type="button" class="btn btn-danger mt-5" style="position:absolute; left: 1rem;">Smazat</a>
+        <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+          style="position:absolute; right: 6rem;">Zrušit</a>
+        <a href="./main_2.html" type="button" class="btn btn-success mt-5" style="position:absolute; right: 1rem;">Hotovo</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
     <h2>Dokumentace</h2>
     <div class="container border mt-0 bg-light text-dark" style="box-shadow: 5px 10px silver;">
 
@@ -268,7 +370,19 @@
             <li><a class="dropdown-item" href="#">Further Documentation</a></li>
             <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
         </ul>
+
+        <a class="nav-link dropdown-toggle filter_3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./../imgs/flag-cs.svg">
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-cs.svg"> Česky</a></li>
+        <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-de.svg"> Deutch</a></li>
+        <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-en.svg"> English</a></li>
+    </ul>
+
         <div style="display: flex;">
+
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(violet, purple); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/pencil.svg" class="card-img-right card-img-top" alt="pencil">
@@ -283,13 +397,16 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <button type="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</button>
-                    <a href="#" style="position: relative; left: 5rem; top: .6rem;"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-3 mb-3"
+                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit
+                    </a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
                             style="height: 2rem;"></a>
                     <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+            </a>
 
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgreen, pink); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/trash3.svg" class="card-img-top" alt="pencil">
@@ -304,13 +421,15 @@
                     </div>
                     <p class="mb-0">Interfaces Data-Exchange and API</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+            </a>
 
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(lightgrey, yellow); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/airplane.svg" class="card-img-top" alt="pencil">
@@ -325,13 +444,15 @@
                     </div>
                     <p class="mb-0">Further Documentation</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+        </a>
 
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(yellow, orange); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/award.svg" class="card-img-top" alt="pencil">
@@ -346,13 +467,15 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
+                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+        </a>
 
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(orange, red); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/boombox.svg" class="card-img-top" alt="pencil">
@@ -367,13 +490,15 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
+                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+        </a>
 
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(lightblue, blue); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/airplane.svg" class="card-img-top" alt="pencil">
@@ -388,14 +513,16 @@
                     </div>
                     <p class="mb-0">Further Documentation</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+        </a>
         </div>
 
+        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
         <div style="display: flex;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(violet, magenta); box-shadow: 5px 5px silver;">
@@ -411,13 +538,15 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
+                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
+                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+            </a>
 
+<a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(pink, purple); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/boombox.svg" class="card-img-top" alt="pencil">
@@ -432,13 +561,15 @@
                     </div>
                     <p class="mb-0">Interfaces Data-Exchange and API</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+</a>
 
+<a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(yellowgreen, lightgreen); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/pencil.svg" class="card-img-top" alt="pencil">
@@ -453,12 +584,15 @@
                     </div>
                     <p class="mb-0">Further Documentation</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
+</a>
+
+<a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: black;">
             <div class="card ms-4 my-2"
                 style="width: 10rem; height: 26rem; background-image: linear-gradient(yellow, yellowgreen); box-shadow: 5px 5px silver;">
                 <img src="./../imgs/trash3.svg" class="card-img-top" alt="pencil">
@@ -473,13 +607,13 @@
                     </div>
                     <p class="mb-0">Most Readed</p>
                     <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a href="./uprava_existujiciho.html" class="btn btn-success mt-0">Upravit</a>
+                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">Upravit</a>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
                             style="height: 2rem;"></a>
                             <div style="font-size: .8rem; text-align: center;"><a href="#" style="text-decoration: none; color: black;">EN | </a><a href="#" style="text-decoration: none; color: black;">CS | </a><a href="#" style="text-decoration: none; color: black;">DE</a></div>
                 </div>
             </div>
-
+</a>
         </div>
     </div>
 
@@ -537,7 +671,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.4.5</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.4.5</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -555,7 +689,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.4.1</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.4.1</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -573,7 +707,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.4.0</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.4.0</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -591,7 +725,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.3.5</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.3.5</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -609,7 +743,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.3.2</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.3.2</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -627,7 +761,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.2.7</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.2.7</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -647,7 +781,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.2.3</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.2.3</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
@@ -665,7 +799,7 @@
                                 placeholder="NULL">Nějaká poznámka.</textarea>
                         </div>
                         <div class="form-text" id="basic-addon4"></div>
-                        <a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.1.0</a>
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.1.0</a>
                         <p style="font-size: .8rem;">25. 4. 2023</p>
                     </div>
                     <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger"
