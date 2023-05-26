@@ -21,6 +21,12 @@
     width: 32px;
 }
 
+.filter_4 {
+    position: relative;
+    bottom: 3.5rem; 
+    left: 750px;
+}
+
 h2 {
     margin-top: 2rem;
     margin-left: 4rem;
@@ -46,7 +52,12 @@ h2 {
     left: 800px;
 }
 
+.filter_4 {
+    left: 815px;
+}
+
 h2 {
     margin-left: 40rem;
 }
+
 }
