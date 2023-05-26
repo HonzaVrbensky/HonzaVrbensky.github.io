@@ -142,10 +142,10 @@
                                 <li><a class="dropdown-item" href="#">Italština</a></li>
                             </ul>
 
-                            <div class="container">
+                            <div class="container" style="width: 33%;">
                                 <div class="row">
                                     <div class="col-sm-12" style="text-align: center">
-                                        <input type="date" name="date">
+                                        <input type="date" name="date" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -232,10 +232,10 @@
                                 <li><a class="dropdown-item" href="#">Italština</a></li>
                             </ul>
 
-                            <div class="container">
+                            <div class="container" style="width: 33%;">
                                 <div class="row">
                                     <div class="col-sm-12" style="text-align: center">
-                                        <input type="date" name="date">
+                                        <input type="date" name="date" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="basic-url" class="form-label">Anglický popis</label>
+                        <label for="basic-url" class="form-label">Český popis</label>
                         <div class="input-group">
                             <!--<span class="input-group-text">With textarea</span>-->
                             <textarea class="form-control"
@@ -313,7 +313,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="basic-url" class="form-label">Anglický popis</label>
+                        <label for="basic-url" class="form-label">Německý popis</label>
                         <div class="input-group">
                             <!--<span class="input-group-text">With textarea</span>-->
                             <textarea class="form-control"
@@ -341,7 +341,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-12" style="text-align: center">
-                                            <input type="date" name="date">
+                                            <input type="date" name="date" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -364,84 +364,345 @@
         </div>
     </div>
 
-    <h2>Dokumentace</h2>
-    <div style="align-items: center; justify-content: center; align-self: center;">
-    <div class="container border mt-0 bg-light text-dark" style="box-shadow: 5px 10px silver;">
-
-        <div style="display: flex;">
-            <div class="container-fluid mt-1" style="width: 30%; display: flex; position: relative; left: 24rem;">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            style="position: relative; bottom: 2rem; left: 970px; width: 32px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-funnel filter" viewBox="0 0 16 16">
-                <path
-                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
-            </svg>
-        </a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item border-bottom" href="#">Vše</a></li>
-            <li><a class="dropdown-item" href="#">Most Readed</a></li>
-            <li><a class="dropdown-item" href="#">Further Documentation</a></li>
-            <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
-        </ul>
-
-        <a class="nav-link dropdown-toggle filter_3" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <img src="./../imgs/flag-cs.svg" alt="CS Flag">
-        </a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-cs.svg" alt="CS Flag"> Česky</a></li>
-            <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-de.svg" alt="DE Flag"> Deutch</a></li>
-            <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-en.svg" alt="EN Flag"> English</a></li>
-        </ul>
-
-        <div style="display: flex; justify-content: center;">
-
-            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-                style="text-decoration: none; color: black;">
-                <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(violet, purple); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/pencil.svg" class="mt-3" alt="pencil"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">D #457</h5>
-                        <div class="mb-0">
+        <!--Modal 5-->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="box-shadow: 5px 10px silver;">
+                    <div class="modal-header">
+                        <div class="input-group mb-3">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="Český název">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="Německý název">
+                        </div>
+    
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Anglický popis</label>
                             <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea"
-                                    placeholder="NULL">Nějaký popis.</textarea>
+                                <!--<span class="input-group-text">With textarea</span>-->
+                                <textarea class="form-control"
+                                    aria-label="With textarea"></textarea>
                             </div>
                             <div class="form-text" id="basic-addon4"></div>
                         </div>
-                        <p class="mb-0">Most Readed</p>
-                        <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                        <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
-                            data-bs-target="#exampleModa2">Upravit
-                        </a>
-                        <a href="#"><img src="./../imgs/trash3.svg" type="button"
-                                class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
-                        <div style="font-size: .8rem; text-align: center;"><a href="#"
-                                style="text-decoration: none; color: black;">EN | </a><a href="#"
-                                style="text-decoration: none; color: black;">CS | </a><a href="#"
-                                style="text-decoration: none; color: black;">DE</a></div>
+    
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Český popis</label>
+                            <div class="input-group">
+                                <!--<span class="input-group-text">With textarea</span>-->
+                                <textarea class="form-control"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Německý popis</label>
+                            <div class="input-group">
+                                <!--<span class="input-group-text">With textarea</span>-->
+                                <textarea class="form-control"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div>
+                        <div style="display: flex;">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="position: relative; top: 3px;">
+                                Jazyková verze
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                                <!--<li><hr class="dropdown-divider"></li>-->
+                                <li><a class="dropdown-item" href="#">Čeština</a></li>
+                                <li><a class="dropdown-item" href="#">Němčina</a></li>
+                            </ul>
+    
+                            <div>
+                                <div style="display: flex;">
+                                    <label for="exampleColorInput" class="form-label me-0 ms-2"
+                                        style="text-align: center; width: 10em;">Release
+                                        Date:</label>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12" style="text-align: center">
+                                                <input type="date" name="date" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer mb-5">
+    
+                        <a href="#" type="button" class="btn btn-danger mt-5"
+                            style="position:absolute; left: 1rem;">Smazat</a>
+                        <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+                            style="position:absolute; right: 6rem;">Zrušit</a>
+                        <a href="./main_2.html" type="button" class="btn btn-success mt-5"
+                            style="position:absolute; right: 1rem;">Hotovo</a>
+    
+    
                     </div>
                 </div>
+            </div>
+        </div>
+
+    <h2>Dokumentace</h2>
+    <div style="align-items: center; justify-content: center; align-self: center;">
+        <div class="container border mt-0 bg-light text-dark" style="box-shadow: 5px 10px silver;">
+
+            <div style="display: flex;">
+                <div class="container-fluid mt-1" style="width: 30%; display: flex; position: relative; left: 24rem;">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="position: relative; bottom: 2rem; left: 970px; width: 32px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-funnel filter" viewBox="0 0 16 16">
+                    <path
+                        d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z" />
+                </svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item border-bottom" href="#">Vše</a></li>
+                <li><a class="dropdown-item" href="#">Most Readed</a></li>
+                <li><a class="dropdown-item" href="#">Further Documentation</a></li>
+                <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
+            </ul>
+
+            <a class="nav-link dropdown-toggle filter_3" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./../imgs/flag-cs.svg" alt="CS Flag">
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-cs.svg" alt="CS Flag"> Česky</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-de.svg" alt="DE Flag"> Deutch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./../imgs/flag-en.svg" alt="EN Flag"> English</a></li>
+            </ul>
+
+            <div style="display: flex; justify-content: center;">
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(violet, purple); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/pencil.svg" class="mt-3" alt="pencil"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">D #457</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Most Readed</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit
+                            </a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(lightgreen, pink); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/trash3.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="trash_can">
+                        <div class="card-body">
+                            <h5 class="card-title">D #456</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Interfaces Data-Exchange and API</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-1 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(lightgrey, yellow); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/airplane.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="airplane">
+                        <div class="card-body">
+                            <h5 class="card-title">D #455</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Further Documentation</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-1 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(yellow, orange); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/award.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="award">
+                        <div class="card-body">
+                            <h5 class="card-title">D #398</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaká popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Most Readed</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(gold, sandybrown); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/boombox.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="radio">
+                        <div class="card-body">
+                            <h5 class="card-title"> D #374</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Most Readed</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                    style="text-decoration: none; color: black;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(lightblue, skyblue); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/airplane.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="airplane">
+                        <div class="card-body">
+                            <h5 class="card-title">D #352</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Further Documentation</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-1 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                style="text-decoration: none; color: black;">
+                <div style="display: flex; justify-content: center;">
+                    <div class="card ms-4 my-2"
+                        style="width: 10rem; height: 20rem; background-image: linear-gradient(violet, magenta); box-shadow: 5px 5px silver;">
+                        <img src="./../imgs/award.svg" class="mt-3"
+                            style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="award">
+                        <div class="card-body">
+                            <h5 class="card-title">D #328</h5>
+                            <div class="mb-0">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="NULL">Nějaký popis.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                            <p class="mb-0">Most Readed</p>
+                            <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                            <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModa2">Upravit</a>
+                            <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                    class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                            <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                    style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                    style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                    style="text-decoration: none; color: black;">DE</a></div>
+                        </div>
+                    </div>
             </a>
 
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
                 style="text-decoration: none; color: black;">
                 <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(lightgreen, pink); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/trash3.svg" class="mt-3"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="trash_can">
+                    style="width: 10rem; height: 20rem; background-image: linear-gradient(pink, purple); box-shadow: 5px 5px silver;">
+                    <img src="./../imgs/boombox.svg" class="mt-3"
+                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="radio">
                     <div class="card-body">
-                        <h5 class="card-title">D #456</h5>
+                        <h5 class="card-title">D #303</h5>
                         <div class="mb-0">
                             <div class="input-group">
                                 <textarea class="form-control" aria-label="With textarea"
@@ -466,11 +727,11 @@
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
                 style="text-decoration: none; color: black;">
                 <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(lightgrey, yellow); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/airplane.svg" class="mt-3"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="airplane">
+                    style="width: 10rem; height: 20rem; background-image: linear-gradient(yellowgreen, lightgreen); box-shadow: 5px 5px silver;">
+                    <img src="./../imgs/pencil.svg" class="mt-3"
+                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="pencil">
                     <div class="card-body">
-                        <h5 class="card-title">D #455</h5>
+                        <h5 class="card-title">D #281</h5>
                         <div class="mb-0">
                             <div class="input-group">
                                 <textarea class="form-control" aria-label="With textarea"
@@ -495,40 +756,11 @@
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
                 style="text-decoration: none; color: black;">
                 <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(yellow, orange); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/award.svg" class="mt-3"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="award">
+                    style="width: 10rem; height: 20rem; background-image: linear-gradient(yellow, yellowgreen); box-shadow: 5px 5px silver;">
+                    <img src="./../imgs/trash3.svg" class="mt-3"
+                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="trash_can">
                     <div class="card-body">
-                        <h5 class="card-title">D #398</h5>
-                        <div class="mb-0">
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea"
-                                    placeholder="NULL">Nějaká popis.</textarea>
-                            </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div>
-                        <p class="mb-0">Most Readed</p>
-                        <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                        <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
-                            data-bs-target="#exampleModa2">Upravit</a>
-                        <a href="#"><img src="./../imgs/trash3.svg" type="button"
-                                class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
-                        <div style="font-size: .8rem; text-align: center;"><a href="#"
-                                style="text-decoration: none; color: black;">EN | </a><a href="#"
-                                style="text-decoration: none; color: black;">CS | </a><a href="#"
-                                style="text-decoration: none; color: black;">DE</a></div>
-                    </div>
-                </div>
-            </a>
-
-            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-                style="text-decoration: none; color: black;">
-                <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(gold, sandybrown); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/boombox.svg" class="mt-3"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="radio">
-                    <div class="card-body">
-                        <h5 class="card-title"> D #374</h5>
+                        <h5 class="card-title">D #205</h5>
                         <div class="mb-0">
                             <div class="input-group">
                                 <textarea class="form-control" aria-label="With textarea"
@@ -553,42 +785,11 @@
             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
                 style="text-decoration: none; color: black;">
                 <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(lightblue, skyblue); box-shadow: 5px 5px silver;">
-                    <img src="./../imgs/airplane.svg" class="mt-3"
-                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="airplane">
-                    <div class="card-body">
-                        <h5 class="card-title">D #352</h5>
-                        <div class="mb-0">
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea"
-                                    placeholder="NULL">Nějaký popis.</textarea>
-                            </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div>
-                        <p class="mb-0">Further Documentation</p>
-                        <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                        <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
-                            data-bs-target="#exampleModa2">Upravit</a>
-                        <a href="#"><img src="./../imgs/trash3.svg" type="button"
-                                class="btn btn-outline-danger mt-1 mb-1" alt="trash_can" style="height: 2rem;"></a>
-                        <div style="font-size: .8rem; text-align: center;"><a href="#"
-                                style="text-decoration: none; color: black;">EN | </a><a href="#"
-                                style="text-decoration: none; color: black;">CS | </a><a href="#"
-                                style="text-decoration: none; color: black;">DE</a></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            style="text-decoration: none; color: black;">
-            <div style="display: flex; justify-content: center;">
-                <div class="card ms-4 my-2"
-                    style="width: 10rem; height: 20rem; background-image: linear-gradient(violet, magenta); box-shadow: 5px 5px silver;">
+                    style="width: 10rem; height: 20rem; background-image: linear-gradient(red, lightblue); box-shadow: 5px 5px silver;">
                     <img src="./../imgs/award.svg" class="mt-3"
                         style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="award">
                     <div class="card-body">
-                        <h5 class="card-title">D #328</h5>
+                        <h5 class="card-title">D #205</h5>
                         <div class="mb-0">
                             <div class="input-group">
                                 <textarea class="form-control" aria-label="With textarea"
@@ -608,156 +809,40 @@
                                 style="text-decoration: none; color: black;">DE</a></div>
                     </div>
                 </div>
-        </a>
+            </a>
 
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            style="text-decoration: none; color: black;">
-            <div class="card ms-4 my-2"
-                style="width: 10rem; height: 20rem; background-image: linear-gradient(pink, purple); box-shadow: 5px 5px silver;">
-                <img src="./../imgs/boombox.svg" class="mt-3"
-                    style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="radio">
-                <div class="card-body">
-                    <h5 class="card-title">D #303</h5>
-                    <div class="mb-0">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea"
-                                placeholder="NULL">Nějaký popis.</textarea>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+                style="text-decoration: none; color: black;">
+                <div class="card ms-4 my-2"
+                    style="width: 10rem; height: 20rem; background-image: linear-gradient(whitesmoke, yellowgreen); box-shadow: 5px 5px silver;">
+                    <img src="./../imgs/amd.svg" class="mt-3"
+                        style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="amd">
+                    <div class="card-body">
+                        <h5 class="card-title">D #205</h5>
+                        <div class="mb-0">
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"
+                                    placeholder="NULL">Nějaký popis.</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
                         </div>
-                        <div class="form-text" id="basic-addon4"></div>
+                        <p class="mb-0">Most Readed</p>
+                        <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
+                        <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
+                            data-bs-target="#exampleModa2">Upravit</a>
+                        <a href="#"><img src="./../imgs/trash3.svg" type="button"
+                                class="btn btn-outline-danger mt-4 mb-1" alt="trash_can" style="height: 2rem;"></a>
+                        <div style="font-size: .8rem; text-align: center;"><a href="#"
+                                style="text-decoration: none; color: black;">EN | </a><a href="#"
+                                style="text-decoration: none; color: black;">CS | </a><a href="#"
+                                style="text-decoration: none; color: black;">DE</a></div>
                     </div>
-                    <p class="mb-0">Interfaces Data-Exchange and API</p>
-                    <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
-                        data-bs-target="#exampleModa2">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
-                            alt="trash_can" style="height: 2rem;"></a>
-                    <div style="font-size: .8rem; text-align: center;"><a href="#"
-                            style="text-decoration: none; color: black;">EN | </a><a href="#"
-                            style="text-decoration: none; color: black;">CS | </a><a href="#"
-                            style="text-decoration: none; color: black;">DE</a></div>
                 </div>
-            </div>
-        </a>
+            </a>
 
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            style="text-decoration: none; color: black;">
-            <div class="card ms-4 my-2"
-                style="width: 10rem; height: 20rem; background-image: linear-gradient(yellowgreen, lightgreen); box-shadow: 5px 5px silver;">
-                <img src="./../imgs/pencil.svg" class="mt-3"
-                    style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="pencil">
-                <div class="card-body">
-                    <h5 class="card-title">D #281</h5>
-                    <div class="mb-0">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea"
-                                placeholder="NULL">Nějaký popis.</textarea>
-                        </div>
-                        <div class="form-text" id="basic-addon4"></div>
-                    </div>
-                    <p class="mb-0">Further Documentation</p>
-                    <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a type="button" class="btn btn-success mt-1" data-bs-toggle="modal"
-                        data-bs-target="#exampleModa2">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-1 mb-1"
-                            alt="trash_can" style="height: 2rem;"></a>
-                    <div style="font-size: .8rem; text-align: center;"><a href="#"
-                            style="text-decoration: none; color: black;">EN | </a><a href="#"
-                            style="text-decoration: none; color: black;">CS | </a><a href="#"
-                            style="text-decoration: none; color: black;">DE</a></div>
-                </div>
-            </div>
-        </a>
-
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            style="text-decoration: none; color: black;">
-            <div class="card ms-4 my-2"
-                style="width: 10rem; height: 20rem; background-image: linear-gradient(yellow, yellowgreen); box-shadow: 5px 5px silver;">
-                <img src="./../imgs/trash3.svg" class="mt-3"
-                    style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="trash_can">
-                <div class="card-body">
-                    <h5 class="card-title">D #205</h5>
-                    <div class="mb-0">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea"
-                                placeholder="NULL">Nějaký popis.</textarea>
-                        </div>
-                        <div class="form-text" id="basic-addon4"></div>
-                    </div>
-                    <p class="mb-0">Most Readed</p>
-                    <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
-                        data-bs-target="#exampleModa2">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
-                            alt="trash_can" style="height: 2rem;"></a>
-                    <div style="font-size: .8rem; text-align: center;"><a href="#"
-                            style="text-decoration: none; color: black;">EN | </a><a href="#"
-                            style="text-decoration: none; color: black;">CS | </a><a href="#"
-                            style="text-decoration: none; color: black;">DE</a></div>
-                </div>
-            </div>
-        </a>
-
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            style="text-decoration: none; color: black;">
-            <div class="card ms-4 my-2"
-                style="width: 10rem; height: 20rem; background-image: linear-gradient(red, lightblue); box-shadow: 5px 5px silver;">
-                <img src="./../imgs/award.svg" class="mt-3"
-                    style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="award">
-                <div class="card-body">
-                    <h5 class="card-title">D #205</h5>
-                    <div class="mb-0">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea"
-                                placeholder="NULL">Nějaký popis.</textarea>
-                        </div>
-                        <div class="form-text" id="basic-addon4"></div>
-                    </div>
-                    <p class="mb-0">Most Readed</p>
-                    <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                    <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
-                        data-bs-target="#exampleModa2">Upravit</a>
-                    <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
-                            alt="trash_can" style="height: 2rem;"></a>
-                    <div style="font-size: .8rem; text-align: center;"><a href="#"
-                            style="text-decoration: none; color: black;">EN | </a><a href="#"
-                            style="text-decoration: none; color: black;">CS | </a><a href="#"
-                            style="text-decoration: none; color: black;">DE</a></div>
-                </div>
-            </div>
-        </a>
-
-        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-        style="text-decoration: none; color: black;">
-        <div class="card ms-4 my-2"
-            style="width: 10rem; height: 20rem; background-image: linear-gradient(whitesmoke, yellowgreen); box-shadow: 5px 5px silver;">
-            <img src="./../imgs/amd.svg" class="mt-3"
-                style="height: 3rem; width: 3rem; position: relative; left: 6rem;" alt="amd">
-            <div class="card-body">
-                <h5 class="card-title">D #205</h5>
-                <div class="mb-0">
-                    <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea"
-                            placeholder="NULL">Nějaký popis.</textarea>
-                    </div>
-                    <div class="form-text" id="basic-addon4"></div>
-                </div>
-                <p class="mb-0">Most Readed</p>
-                <p class="mb-1" style="font-size: .8rem;">23. 4. 2023</p>
-                <a type="button" class="btn btn-success mt-4" data-bs-toggle="modal"
-                    data-bs-target="#exampleModa2">Upravit</a>
-                <a href="#"><img src="./../imgs/trash3.svg" type="button" class="btn btn-outline-danger mt-4 mb-1"
-                        alt="trash_can" style="height: 2rem;"></a>
-                <div style="font-size: .8rem; text-align: center;"><a href="#"
-                        style="text-decoration: none; color: black;">EN | </a><a href="#"
-                        style="text-decoration: none; color: black;">CS | </a><a href="#"
-                        style="text-decoration: none; color: black;">DE</a></div>
-            </div>
         </div>
-    </a>
-
     </div>
-    </div>
-    <a href="./dokumentace.html" type="button" class="btn btn-success mt-3 button__main">+
+    <a htype="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal5">+
         Přidat nové Release Notes</a>
 
     <h2>Release Notes</h2>
@@ -790,7 +875,7 @@
         </ul>
 
         <!--Poslednich 6 verzi-->
-        <a href="#" class="text-body-secondary">
+        <a href="#poslednich_sest_verzi" class="text-body-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                 class="bi bi-6-square filter_4" viewBox="0 0 16 16">
                 <path
@@ -801,8 +886,9 @@
         </a>
 
         <div style="display: flex; justify-content: center;">
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/pencil.svg" class="mt-3" alt="pencil"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #17052023</h5>
@@ -822,8 +908,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/airplane.svg" class="mt-3" alt="airplane"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #13062023</h5>
@@ -842,8 +929,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/boombox.svg" class="mt-3" alt="radio"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #01052023</h5>
@@ -862,8 +950,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/award.svg" class="mt-3" alt="award"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #03022022</h5>
@@ -882,8 +971,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/amd.svg" class="mt-3" alt="amd"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #29012022</h5>
@@ -902,8 +992,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/airplane.svg" class="mt-3" alt="airplane"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #171220211</h5>
@@ -924,8 +1015,9 @@
         </div>
 
         <div style="display: flex; justify-content: center;">
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/trash3.svg" class="mt-3" alt="trash_can"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title"> RN #071120211</h5>
@@ -944,8 +1036,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/pencil.svg" class="mt-3" alt="pencil"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #03022022</h5>
@@ -964,8 +1057,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/boombox.svg" class="mt-3" alt="radio"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #03022022</h5>
@@ -984,8 +1078,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/airplane.svg" class="mt-3" alt="airplane"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #03022022</h5>
@@ -1004,8 +1099,9 @@
                 </div>
             </div>
 
-            <div class="card ms-4 my-2" style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
-                <img src="./../imgs/award.svg" class="mt-3" alt="award"
+            <div class="card ms-4 my-2"
+                style="width: 10rem; height: 20rem; box-shadow: 5px 5px silver; background-image: linear-gradient(white, whitesmoke);">
+                <img src="./../imgs/logo-xc.png.png" class="mt-3" alt="logo-xc"
                     style="height: 3rem; width: 3rem; position: relative; left: 6rem;">
                 <div class="card-body">
                     <h5 class="card-title">RN #03022022</h5>
