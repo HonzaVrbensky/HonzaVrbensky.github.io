@@ -127,10 +127,10 @@
                 <li><a class="dropdown-item" href="#">Italština</a></li>
               </ul>
 
-              <div class="container">
+              <div class="container" style="width: 33%;">
                 <div class="row">
                   <div class="col-sm-12" style="text-align: center">
-                    <input type="date" name="date">
+                    <input type="date" name="date" class="form-control">
                   </div>
                 </div>
               </div>
@@ -215,10 +215,10 @@
                 <li><a class="dropdown-item" href="#">Italština</a></li>
               </ul>
 
-              <div class="container">
+              <div class="container" style="width: 33%;">
                 <div class="row">
                   <div class="col-sm-12" style="text-align: center">
-                    <input type="date" name="date">
+                    <input type="date" name="date" class="form-control">
                   </div>
                 </div>
               </div>
@@ -300,7 +300,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-sm-12" style="text-align: center">
-                      <input type="date" name="date">
+                      <input type="date" name="date" class="form-control">
                     </div>
                   </div>
                 </div>
@@ -321,6 +321,91 @@
       </div>
     </div>
   </div>
+
+  <!--Modal 5-->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="box-shadow: 5px 10px silver;">
+            <div class="modal-header">
+                <div class="input-group mb-3">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Český název">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Německý název">
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Anglický popis</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Český popis</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Německý popis</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>
+                <div style="display: flex;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="position: relative; top: 3px;">
+                        Jazyková verze
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                        <!--<li><hr class="dropdown-divider"></li>-->
+                        <li><a class="dropdown-item" href="#">Čeština</a></li>
+                        <li><a class="dropdown-item" href="#">Němčina</a></li>
+                    </ul>
+
+                    <div>
+                        <div style="display: flex;">
+                            <label for="exampleColorInput" class="form-label me-0 ms-2"
+                                style="text-align: center; width: 10em;">Release
+                                Date:</label>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12" style="text-align: center">
+                                        <input type="date" name="date" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer mb-5">
+
+                <a href="#" type="button" class="btn btn-danger mt-5"
+                    style="position:absolute; left: 1rem;">Smazat</a>
+                <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+                    style="position:absolute; right: 6rem;">Zrušit</a>
+                <a href="./main_2.html" type="button" class="btn btn-success mt-5"
+                    style="position:absolute; right: 1rem;">Hotovo</a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
 
   <div class="container border mt-5 bg-light text-dark" style="box-shadow: 5px 10px silver;">
     <table class="table">
@@ -366,7 +451,7 @@
               </svg>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item border-bottom" href="#">Vše</a></li>
+              <li><a class="dropdown-item border" href="#">Vše</a></li>
               <li><a class="dropdown-item" href="#">Most Readed</a></li>
               <li><a class="dropdown-item" href="#">Further Documentation</a></li>
               <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
@@ -528,7 +613,7 @@
     </table>
   </div>
 
-  <a href="./release_notes.html" type="button" class="btn btn-success mt-3 button__main">+
+  <a htype="button" class="btn btn-success button__main mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal5">+
     Přidat nové Release Notes</a>
 
   <div class="container border bg-light text-dark" style="margin-top: 4rem; box-shadow: 5px 10px silver;">
