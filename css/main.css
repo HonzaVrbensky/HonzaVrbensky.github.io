@@ -8,6 +8,24 @@
     margin-left: 7rem;
 }
 
+.filter_2 {
+    position: relative;
+    bottom: 2rem; 
+    left: 970px;
+}
+
+.filter_3 {
+    position: relative;
+    bottom: 3.5rem; 
+    left: 730px; 
+    width: 32px;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
 @media screen and (min-width: 1800px) {
 .button__main {
     position: absolute;
@@ -18,5 +36,17 @@
 .filter {
     position: relative;
     margin-left: 12rem;
+}
+
+.filter_2 {
+    left: 1050px;
+}
+
+.filter_3 {
+    left: 800px;
+}
+
+h2 {
+    margin-left: 40rem;
 }
 }
