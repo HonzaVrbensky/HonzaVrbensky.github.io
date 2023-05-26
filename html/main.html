@@ -55,8 +55,261 @@
     </div>
   </nav>
 
-  <a href="./dokumentace.html" type="button" class="btn btn-success mt-1 button__main">+
+  <a type="button" class="btn btn-success button__main mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">+
     Přidat novou dokumentaci</a>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="box-shadow: 5px 10px silver;">
+          <div class="modal-header" style="display: flex; flex-direction: column;">
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+            
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+          </div>
+          <div class="modal-body">
+              <div class="mb-3">
+                  <label for="basic-url" class="form-label">Podrobnější popis</label>
+                  <div class="input-group">
+                    <!--<span class="input-group-text">With textarea</span>-->
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                  <div class="form-text" id="basic-addon4"></div>
+                </div>
+            
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                  <input class="form-control" type="file" id="formFile">
+            
+                  <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                  <div style="display: flex;" class="mb-2">
+                    <!--<br>
+                  <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                    <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
+                      aria-label="Username" aria-describedby="basic-addon1">
+            
+            
+                    <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
+                      barvu</label>
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#4F7942"
+                      title="Choose your color">
+                  </div>
+            
+                  <label for="customRange1" class="form-label">Vyber skupinu</label>
+                  <br>
+                    <select type="text" class="form-control me-3" style="width: 33%;">
+                      <option class="dropdown-item">Vyber</option>
+                      <option class="dropdown-item">Most Readed</option>
+                      <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                      <option class="dropdown-item">Further Documentation</option>
+                      <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                    </select>
+                    
+                    <div style="display: flex; align-items: center;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                      style="position: relative; top: 3px;">
+                      Jazyková verze
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                      <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                      <!--<li><hr class="dropdown-divider"></li>-->
+                      <li><a class="dropdown-item" href="#">Němčina</a></li>
+                      <li><a class="dropdown-item" href="#">Čeština</a></li>
+                      <li><a class="dropdown-item" href="#">Španělština</a></li>
+                      <li><a class="dropdown-item" href="#">Italština</a></li>
+                    </ul>
+            
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12" style="text-align: center">
+                          <input type="date" name="date">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="mb-5">
+          <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+            style="position:absolute; right: 9rem;">Zrušit</a>
+          <a href="./main_2.html" type="button" class="btn btn-success mt-1" style="position:absolute; right: 4rem;">Hotovo</a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 2-->
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="box-shadow: 5px 10px silver;">
+        <div class="modal-header" style="display: flex; flex-direction: column;">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                  value="Název Dokumentace v češtině" aria-describedby="basic-addon1">
+              </div>
+          
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                  value="Krátký popis v češtině" aria-describedby="basic-addon1">
+              </div>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                <div class="input-group">
+                  <!--<span class="input-group-text">With textarea</span>-->
+                  <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                </div>
+                <div class="form-text" id="basic-addon4"></div>
+              </div>
+          
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                <input class="form-control" type="file" id="formFile">
+          
+                <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                <div style="display: flex;" class="mb-2">
+                  <!--<br>
+                <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                  <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
+                  value="rgb(86,61, 124)" aria-label="Username" aria-describedby="basic-addon1">
+          
+          
+                  <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
+                    barvu</label>
+                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                    title="Choose your color">
+                </div>
+          
+                <label for="customRange1" class="form-label">Vyber skupinu</label>
+                <br>
+                  <select type="text" class="form-control me-3" style="width: 33%;">
+                    <option class="dropdown-item">Vyber</option>
+                    <option class="dropdown-item">Most Readed</option>
+                    <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                    <option class="dropdown-item">Further Documentation</option>
+                    <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                  </select>
+                  
+                  <div style="display: flex; align-items: center;">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="position: relative; top: 3px;">
+                    Jazyková verze
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                    <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>-->
+                    <li><a class="dropdown-item" href="#">Němčina</a></li>
+                    <li><a class="dropdown-item" href="#">Čeština</a></li>
+                    <li><a class="dropdown-item" href="#">Španělština</a></li>
+                    <li><a class="dropdown-item" href="#">Italština</a></li>
+                  </ul>
+          
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12" style="text-align: center">
+                        <input type="date" name="date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="mb-5">
+        <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+          style="position:absolute; right: 9rem;">Zrušit</a>
+        <a href="./main_2.html" type="button" class="btn btn-success mt-1" style="position:absolute; right: 4rem;">Hotovo</a>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 4-->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="box-shadow: 5px 10px silver;">
+      <div class="modal-header">
+          <div class="input-group mb-3">
+              <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název" value="Anglický název vyplněný == RN #482">
+              <input type="text" aria-label="First name" class="form-control" placeholder="Český název" value="Český název vyplněný == RN #457">
+              <input type="text" aria-label="First name" class="form-control" placeholder="Německý název" value="Německý název vyplněný == RN #434">
+            </div>
+
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+              <label for="basic-url" class="form-label">Anglický popis</label>
+              <div class="input-group">
+                <!--<span class="input-group-text">With textarea</span>-->
+                <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+              </div>
+              <div class="form-text" id="basic-addon4"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">Anglický popis</label>
+              <div class="input-group">
+                <!--<span class="input-group-text">With textarea</span>-->
+                <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+              </div>
+              <div class="form-text" id="basic-addon4"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">Anglický popis</label>
+              <div class="input-group">
+                <!--<span class="input-group-text">With textarea</span>-->
+                <textarea class="form-control" aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
+              </div>
+              <div class="form-text" id="basic-addon4"></div>
+            </div>
+<div style="display: flex;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="position: relative; top: 3px;">
+                Jazyková verze
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                <!--<li><hr class="dropdown-divider"></li>-->
+                <li><a class="dropdown-item" href="#">Čeština</a></li>
+                <li><a class="dropdown-item" href="#">Němčina</a></li>
+              </ul>
+
+              <div>
+                  <div style="display: flex;">
+                    <label for="exampleColorInput" class="form-label me-0 ms-2" style="text-align: center; width: 10em;">Release
+                      Date:</label>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12" style="text-align: center">
+                          <input type="date" name="date">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</div>
+      </div>
+      <div class="modal-footer mb-5">
+
+      <a href="#" type="button" class="btn btn-danger mt-5" style="position:absolute; left: 1rem;">Smazat</a>
+      <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+        style="position:absolute; right: 6rem;">Zrušit</a>
+      <a href="./main_2.html" type="button" class="btn btn-success mt-5" style="position:absolute; right: 1rem;">Hotovo</a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="container border mt-5 bg-light text-dark" style="box-shadow: 5px 10px silver;">
     <table class="table">
@@ -121,7 +374,7 @@
           <td>Most Readed</td>
           <td>13. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-          <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
@@ -131,7 +384,7 @@
           <td>Further Documentation</td>
           <td>17. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-          <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -141,7 +394,7 @@
           <td>Interfaces Date-Exchange and API</td>
           <td>21. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-          <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
         </tr>
       </tbody>
       <tr>
@@ -152,7 +405,7 @@
         <td>Further Documentation</td>
         <td>8. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">5</th>
@@ -162,7 +415,7 @@
         <td>Most Readed</td>
         <td>23. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">6</th>
@@ -172,7 +425,7 @@
         <td>Further Documentation</td>
         <td>9. 5. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       </tbody>
       <tr>
@@ -183,7 +436,7 @@
         <td>Most Readed</td>
         <td>1. 5. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">8</th>
@@ -193,7 +446,7 @@
         <td>Interfaces Date-Exchange and API</td>
         <td>29. 4. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">9</th>
@@ -203,7 +456,7 @@
         <td>Most Readed</td>
         <td>6. 10. 2022</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">10</th>
@@ -213,7 +466,7 @@
         <td>Further Documentation</td>
         <td>1. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></a></td>
       </tr>
       </tbody>
       <tr>
@@ -224,7 +477,7 @@
         <td>Further Documentation</td>
         <td>7. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">12</th>
@@ -234,7 +487,7 @@
         <td>Interfaces Date-Exchange and API</td>
         <td>10. 3. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       <tr>
         <th scope="row">13</th>
@@ -244,7 +497,7 @@
         <td>Most Readed</td>
         <td>1. 2. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-        <td><a href="./uprava_existujiciho.html"><img src="./../imgs/pencil.svg"></a></td>
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2" style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg"></a></td>
       </tr>
       </tbody>
     </table>
@@ -324,9 +577,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Lorem ipsum."
                 aria-describedby="basic-addon1"></td>
               <td>17. 6. 2023</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.4.1</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.4.1</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -334,9 +587,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Tohle je popis."
                 aria-describedby="basic-addon1"></td>
               <td>13. 6. 2023</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.4.0</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.4.0</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
@@ -344,9 +597,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Krátký popis."
                 aria-describedby="basic-addon1"></td>
               <td>1. 5. 2023</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.3.8</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.3.8</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">4</th>
@@ -354,9 +607,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Další popis."
                 aria-describedby="basic-addon1"></td>
               <td>3. 2. 2022</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.2.6</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.2.6</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">5</th>
@@ -364,9 +617,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Ještě další popis."
                 aria-describedby="basic-addon1"></td>
               <td>29. 1. 2022</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.2.1</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.2.1</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">6</th>
@@ -374,9 +627,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Popis."
                 aria-describedby="basic-addon1"></td>
               <td>17. 12. 2021</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.1.22</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.1.22</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">7</th>
@@ -384,9 +637,9 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value=""
                 aria-describedby="basic-addon1"></td>
               <td>7. 11. 2021</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">1.0.2</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">1.0.2</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./uprava_release_notes.html"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
             <tr>
               <th scope="row">8</th>
@@ -394,11 +647,11 @@
               <td><input type="text" class="form-control" placeholder="NULL" aria-label="Username" value="Kono Dio Da!"
                 aria-describedby="basic-addon1"></td>
               <td>3. 2. 2005</td>
-              <td><a href="./uprava_release_notes.html" style="text-decoration: none; color: black;">0.1.13</a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;">0.1.13</a></td>
               <td><a href="#"><img src="./../imgs/trash3.svg"></a></td>
-              <td><a href="./"><img src="./../imgs/pencil.svg"></a></td>
+              <td><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: black;"><img src="./../imgs/pencil.svg"></a></td>
             </tr>
-          </tbody>
+          </tbody>  
     </table>
   </div>
 
