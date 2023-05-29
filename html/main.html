@@ -56,348 +56,596 @@
     </div>
   </nav>
 
-  <!--Modal 1-->
+  <!--Modal 1_nova_dokumentace-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content" style="box-shadow: 5px 10px silver;">
-        <div class="modal-header" style="display: flex; flex-direction: column;">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-              aria-describedby="basic-addon1">
-          </div>
-
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-              aria-describedby="basic-addon1">
-          </div>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Podrobnější popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Výběr ikony .svg</label>
-            <input class="form-control" type="file" id="formFile">
-
-            <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
-            <div style="display: flex;" class="mb-2">
-              <!--<br>
-                  <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
-              <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
-                aria-label="Username" aria-describedby="basic-addon1">
-
-
-              <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
-                barvu</label>
-              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#4F7942"
-                title="Choose your color">
-            </div>
-
-            <label for="customRange1" class="form-label">Vyber skupinu</label>
-            <br>
-            <select type="text" class="form-control me-3" style="width: 33%;">
-              <option class="dropdown-item">Vyber</option>
-              <option class="dropdown-item">Most Readed</option>
-              <option class="dropdown-item">Interfaces Date-Exchange and API</option>
-              <option class="dropdown-item">Further Documentation</option>
-              <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
-            </select>
-
-            <div style="display: flex; align-items: center;">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                style="position: relative; top: 3px;">
-                Jazyková verze
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Angličtina</a></li>
-                <li><a class="dropdown-item" href="#">Francouzština</a></li>
-                <!--<li><hr class="dropdown-divider"></li>-->
-                <li><a class="dropdown-item" href="#">Němčina</a></li>
-                <li><a class="dropdown-item" href="#">Čeština</a></li>
-                <li><a class="dropdown-item" href="#">Španělština</a></li>
-                <li><a class="dropdown-item" href="#">Italština</a></li>
-              </ul>
-
-              <div class="container" style="width: 33%;">
-                <div class="row">
-                  <div class="col-sm-12" style="text-align: center">
-                    <input type="date" name="date" class="form-control">
-                  </div>
+        <div class="modal-content" style="box-shadow: 5px 10px silver;">
+            <div class="modal-header" style="display: flex; flex-direction: column;">
+                <!--<div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                        value="Název Dokumentace v češtině" aria-describedby="basic-addon1">
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-5">
-            <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
-              style="position:absolute; right: 9rem;">Zrušit</a>
-            <a href="./main_2.html" type="button" class="btn btn-success mt-1"
-              style="position:absolute; right: 4rem;">Hotovo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!--Modal 2-->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                        value="Krátký popis v češtině" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Podrobnější popis</label>
+                    <div class="input-group">
+                        !--<span class="input-group-text">With textarea</span>--
+                        <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>-->
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                    <input class="form-control" type="file" id="formFile">
+
+                    <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                    <div style="display: flex;" class="mb-2">
+                        <!--<br>
+            <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                        <input style="width: 50%;" type="text" class="form-control me-3"
+                            placeholder="Barva (rgb/hex/hls/hsla)" value="rgb(86,61, 124)" aria-label="Username"
+                            aria-describedby="basic-addon1">
+
+
+                        <label for="exampleColorInput" class="form-label me-2"
+                            style="position: relative; top: 3px;">Vybrat
+                            barvu</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                            value="#563d7c" title="Choose your color">
+                    </div>
+
+                    <label for="customRange1" class="form-label">Vyber skupinu</label>
+                    <br>
+                    <select type="text" class="form-control me-3" style="width: 33%;">
+                        <option class="dropdown-item">Vyber</option>
+                        <option class="dropdown-item">Most Readed</option>
+                        <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                        <option class="dropdown-item">Further Documentation</option>
+                        <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                    </select>
+
+                    <div style="display: flex; flex-wrap: wrap; align-items: center;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="position: relative; top: 3px;">
+                            Jazyková verze
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                            <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                            <!--<li><hr class="dropdown-divider"></li>-->
+                            <li><a class="dropdown-item" href="#">Němčina</a></li>
+                            <li><a class="dropdown-item" href="#">Čeština</a></li>
+                            <li><a class="dropdown-item" href="#">Španělština</a></li>
+                            <li><a class="dropdown-item" href="#">Italština</a></li>
+                        </ul>
+
+                        <div class="container" style="width: 33%;">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: center">
+                                    <input type="date" name="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#anglictina-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Angličtina</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#cestina-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Čeština</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#nemcina-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Němčina</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#spanelstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Španělština</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#francouzstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Francouzština</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#italstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Italština</button>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+<!--anglictina-->       <div class="tab-pane fade show active" id="anglictina-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--cestina-->          <div class="tab-pane fade" id="cestina-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--nemcina-->          <div class="tab-pane fade" id="nemcina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--spanelstina-->      <div class="tab-pane fade" id="spanelstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--francouzstina-->    <div class="tab-pane fade" id="francouzstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--italstina-->        <div class="tab-pane fade" id="italstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+                      </div>
+
+                </div>
+                <div class="mb-5">
+                    <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+                        style="position:absolute; right: 9rem;">Zrušit</a>
+                    <a href="./main_2.html" type="button" class="btn btn-success mt-1"
+                        style="position:absolute; right: 4rem;">Hotovo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--Modal 2_uprava_dokumentace-->
   <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content" style="box-shadow: 5px 10px silver;">
-        <div class="modal-header" style="display: flex; flex-direction: column;">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-              value="Název Dokumentace v češtině" aria-describedby="basic-addon1">
-          </div>
-
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-              value="Krátký popis v češtině" aria-describedby="basic-addon1">
-          </div>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Podrobnější popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Výběr ikony .svg</label>
-            <input class="form-control" type="file" id="formFile">
-
-            <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
-            <div style="display: flex;" class="mb-2">
-              <!--<br>
-                <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
-              <input style="width: 50%;" type="text" class="form-control me-3" placeholder="Barva (rgb/hex/hls/hsla)"
-                value="rgb(86,61, 124)" aria-label="Username" aria-describedby="basic-addon1">
-
-
-              <label for="exampleColorInput" class="form-label me-2" style="position: relative; top: 3px;">Vybrat
-                barvu</label>
-              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
-                title="Choose your color">
-            </div>
-
-            <label for="customRange1" class="form-label">Vyber skupinu</label>
-            <br>
-            <select type="text" class="form-control me-3" style="width: 33%;">
-              <option class="dropdown-item">Vyber</option>
-              <option class="dropdown-item">Most Readed</option>
-              <option class="dropdown-item">Interfaces Date-Exchange and API</option>
-              <option class="dropdown-item">Further Documentation</option>
-              <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
-            </select>
-
-            <div style="display: flex; align-items: center;">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                style="position: relative; top: 3px;">
-                Jazyková verze
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Angličtina</a></li>
-                <li><a class="dropdown-item" href="#">Francouzština</a></li>
-                <!--<li><hr class="dropdown-divider"></li>-->
-                <li><a class="dropdown-item" href="#">Němčina</a></li>
-                <li><a class="dropdown-item" href="#">Čeština</a></li>
-                <li><a class="dropdown-item" href="#">Španělština</a></li>
-                <li><a class="dropdown-item" href="#">Italština</a></li>
-              </ul>
-
-              <div class="container" style="width: 33%;">
-                <div class="row">
-                  <div class="col-sm-12" style="text-align: center">
-                    <input type="date" name="date" class="form-control">
-                  </div>
+        <div class="modal-content" style="box-shadow: 5px 10px silver;">
+            <div class="modal-header" style="display: flex; flex-direction: column;">
+                <!--<div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                        value="Název Dokumentace v češtině" aria-describedby="basic-addon1">
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-5">
-            <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
-              style="position:absolute; right: 9rem;">Zrušit</a>
-            <a href="./main_2.html" type="button" class="btn btn-success mt-1"
-              style="position:absolute; right: 4rem;">Hotovo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!--Modal 4-->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                        value="Krátký popis v češtině" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Podrobnější popis</label>
+                    <div class="input-group">
+                        !--<span class="input-group-text">With textarea</span>--
+                        <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>-->
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Výběr ikony .svg</label>
+                    <input class="form-control" type="file" id="formFile">
+
+                    <label for="customRange1" class="form-label">Výběr barvy pozadí</label>
+                    <div style="display: flex;" class="mb-2">
+                        <!--<br>
+            <input type="range" class="form-range" id="customRange1" style="width: 33%;">-->
+                        <input style="width: 50%;" type="text" class="form-control me-3"
+                            placeholder="Barva (rgb/hex/hls/hsla)" value="rgb(86,61, 124)" aria-label="Username"
+                            aria-describedby="basic-addon1">
+
+
+                        <label for="exampleColorInput" class="form-label me-2"
+                            style="position: relative; top: 3px;">Vybrat
+                            barvu</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                            value="#563d7c" title="Choose your color">
+                    </div>
+
+                    <label for="customRange1" class="form-label">Vyber skupinu</label>
+                    <br>
+                    <select type="text" class="form-control me-3" style="width: 33%;">
+                        <option class="dropdown-item">Vyber</option>
+                        <option class="dropdown-item">Most Readed</option>
+                        <option class="dropdown-item">Interfaces Date-Exchange and API</option>
+                        <option class="dropdown-item">Further Documentation</option>
+                        <option class="dropdown-item"><a href="#">Upravit skupiny</a></option>
+                    </select>
+
+                    <div style="display: flex; flex-wrap: wrap; align-items: center;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="position: relative; top: 3px;">
+                            Jazyková verze
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                            <li><a class="dropdown-item" href="#">Francouzština</a></li>
+                            <!--<li><hr class="dropdown-divider"></li>-->
+                            <li><a class="dropdown-item" href="#">Němčina</a></li>
+                            <li><a class="dropdown-item" href="#">Čeština</a></li>
+                            <li><a class="dropdown-item" href="#">Španělština</a></li>
+                            <li><a class="dropdown-item" href="#">Italština</a></li>
+                        </ul>
+
+                        <div class="container" style="width: 33%;">
+                            <div class="row">
+                                <div class="col-sm-12" style="text-align: center">
+                                    <input type="date" name="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#anglictina-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Angličtina</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#cestina-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Čeština</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#nemcina-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Němčina</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#spanelstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Španělština</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#francouzstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Francouzština</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#italstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Italština</button>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+<!--anglictina-->       <div class="tab-pane fade show active" id="anglictina-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--cestina-->          <div class="tab-pane fade" id="cestina-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--nemcina-->          <div class="tab-pane fade" id="nemcina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--spanelstina-->      <div class="tab-pane fade" id="spanelstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--francouzstina-->    <div class="tab-pane fade" id="francouzstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+<!--italstina-->        <div class="tab-pane fade" id="italstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
+                                value="Název Dokumentace" aria-describedby="basic-addon1">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
+                                value="Krátký popis" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Podrobnější popis</label>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                            </div>
+                            <div class="form-text" id="basic-addon4"></div>
+                        </div></div>
+                      </div>
+
+                </div>
+                <div class="mb-5">
+                    <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-1"
+                        style="position:absolute; right: 9rem;">Zrušit</a>
+                    <a href="./main_2.html" type="button" class="btn btn-success mt-1"
+                        style="position:absolute; right: 4rem;">Hotovo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--Modal 4_uprava_release_notes-->
   <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content" style="box-shadow: 5px 10px silver;">
-        <div class="modal-header">
-          <div class="input-group mb-3">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název"
-              value="Anglický název vyplněný == RN #482">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Český název"
-              value="Český název vyplněný == RN #457">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Německý název"
-              value="Německý název vyplněný == RN #434">
-          </div>
-
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Anglický popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control"
-                aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Český popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control"
-                aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Německý popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control"
-                aria-label="With textarea">Nějaký popis. lorem ipsum ipsum morte.</textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-          <div style="display: flex;">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              style="position: relative; top: 3px;">
-              Jazyková verze
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Angličtina</a></li>
-              <!--<li><hr class="dropdown-divider"></li>-->
-              <li><a class="dropdown-item" href="#">Čeština</a></li>
-              <li><a class="dropdown-item" href="#">Němčina</a></li>
-            </ul>
-
-            <div>
-              <div style="display: flex;">
-                <label for="exampleColorInput" class="form-label me-0 ms-2"
-                  style="text-align: center; width: 10em;">Release
-                  Date:</label>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12" style="text-align: center">
-                      <input type="date" name="date" class="form-control">
-                    </div>
-                  </div>
+        <div class="modal-content" style="box-shadow: 5px 10px silver;">
+            <div class="modal-header">
+                <div class="input-group mb-3">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Číslo verze"
+                        value="#482">
                 </div>
-              </div>
+
             </div>
-          </div>
-        </div>
-        <div class="modal-footer mb-5">
-
-          <a href="#" type="button" class="btn btn-danger mt-5" style="position:absolute; left: 1rem;">Smazat</a>
-          <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
-            style="position:absolute; right: 6rem;">Zrušit</a>
-          <a href="./main_2.html" type="button" class="btn btn-success mt-5"
-            style="position:absolute; right: 1rem;">Hotovo</a>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Modal 5-->
-  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="box-shadow: 5px 10px silver;">
-        <div class="modal-header">
-          <div class="input-group mb-3">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Anglický název">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Český název">
-            <input type="text" aria-label="First name" class="form-control" placeholder="Německý název">
-          </div>
-
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Anglický popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Český popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="basic-url" class="form-label">Německý popis</label>
-            <div class="input-group">
-              <!--<span class="input-group-text">With textarea</span>-->
-              <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            <div class="form-text" id="basic-addon4"></div>
-          </div>
-          <div style="display: flex;">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              style="position: relative; top: 3px;">
-              Jazyková verze
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Angličtina</a></li>
-              <!--<li><hr class="dropdown-divider"></li>-->
-              <li><a class="dropdown-item" href="#">Čeština</a></li>
-              <li><a class="dropdown-item" href="#">Němčina</a></li>
-            </ul>
-
-            <div>
-              <div style="display: flex;">
-                <label for="exampleColorInput" class="form-label me-0 ms-2"
-                  style="text-align: center; width: 10em;">Release
-                  Date:</label>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12" style="text-align: center">
-                      <input type="date" name="date" class="form-control">
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Anglický odkaz</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea">https://example.com</textarea>
                     </div>
-                  </div>
+                    <div class="form-text" id="basic-addon4"></div>
                 </div>
-              </div>
+
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Český odkaz</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea">https://example.cz</textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label">Německý odkaz</label>
+                    <div class="input-group">
+                        <!--<span class="input-group-text">With textarea</span>-->
+                        <textarea class="form-control"
+                            aria-label="With textarea">https://example.de</textarea>
+                    </div>
+                    <div class="form-text" id="basic-addon4"></div>
+                </div>
+                <div style="display: flex;">
+                    <!--
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="position: relative; top: 3px;">
+                        Jazyková verze
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                        !--<li><hr class="dropdown-divider"></li>--
+                        <li><a class="dropdown-item" href="#">Čeština</a></li>
+                        <li><a class="dropdown-item" href="#">Němčina</a></li>
+                    </ul>
+                -->
+                    <div>
+                        <div style="display: flex;">
+                            <label for="exampleColorInput" class="form-label me-0 ms-2"
+                                style="text-align: center; width: 10em;">Release
+                                Date:</label>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12" style="text-align: center">
+                                        <input type="date" name="date" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="modal-footer mb-5">
+
+                <a href="#" type="button" class="btn btn-danger mt-5"
+                    style="position:absolute; left: 1rem;">Smazat</a>
+                <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+                    style="position:absolute; right: 6rem;">Zrušit</a>
+                <a href="./main_2.html" type="button" class="btn btn-success mt-5"
+                    style="position:absolute; right: 1rem;">Hotovo</a>
+
+
+            </div>
         </div>
-        <div class="modal-footer mb-5">
-
-          <a href="#" type="button" class="btn btn-danger mt-5" style="position:absolute; left: 1rem;">Smazat</a>
-          <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
-            style="position:absolute; right: 6rem;">Zrušit</a>
-          <a href="./main_2.html" type="button" class="btn btn-success mt-5"
-            style="position:absolute; right: 1rem;">Hotovo</a>
-
-
-        </div>
-      </div>
     </div>
+</div>
+
+    <!--Modal 5_nove_release_notes-->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content" style="box-shadow: 5px 10px silver;">
+              <div class="modal-header">
+                  <div class="input-group mb-3">
+                      <input type="text" aria-label="First name" class="form-control" placeholder="Číslo verze">
+                  </div>
+
+              </div>
+              <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="basic-url" class="form-label">Anglický odkaz</label>
+                      <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      <div class="form-text" id="basic-addon4"></div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="basic-url" class="form-label">Český odkaz</label>
+                      <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      <div class="form-text" id="basic-addon4"></div>
+                  </div>
+
+                  <div class="mb-3">
+                      <label for="basic-url" class="form-label">Německý odkaz</label>
+                      <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                      <div class="form-text" id="basic-addon4"></div>
+                  </div>
+                  <div style="display: flex;">
+                     <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false" style="position: relative; top: 3px;">
+                          Jazyková verze
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Angličtina</a></li>
+                          !--<li><hr class="dropdown-divider"></li>--
+                          <li><a class="dropdown-item" href="#">Čeština</a></li>
+                          <li><a class="dropdown-item" href="#">Němčina</a></li>
+                      </ul>
+                  -->
+                      <div>
+                          <div style="display: flex;">
+                              <label for="exampleColorInput" class="form-label me-0 ms-2"
+                                  style="text-align: center; width: 10em;">Release
+                                  Date:</label>
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-sm-12" style="text-align: center">
+                                          <input type="date" name="date" class="form-control">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer mb-5">
+
+                  <a href="./main_2.html" type="button" class="btn btn-outline-danger mt-5"
+                      style="position:absolute; right: 6rem;">Zrušit</a>
+                  <a href="./main_2.html" type="button" class="btn btn-success mt-5"
+                      style="position:absolute; right: 1rem;">Hotovo</a>
+
+
+              </div>
+          </div>
+      </div>
   </div>
 
   <a type="button" class="btn btn-success button__main mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">+
