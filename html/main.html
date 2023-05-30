@@ -266,8 +266,8 @@
     </div>
 </div>
 
-  <!--Modal 2_uprava_dokumentace-->
-  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--Modal 2_uprava_dokumentace-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content" style="box-shadow: 5px 10px silver;">
             <div class="modal-header" style="display: flex; flex-direction: column;">
@@ -347,134 +347,182 @@
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#anglictina-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Angličtina</button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#anglictina2-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Angličtina</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#cestina-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Čeština</button>
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#cestina2-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Čeština</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#nemcina-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Němčina</button>
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nemcina2-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Němčina</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#spanelstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Španělština</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#francouzstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Francouzština</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#italstina-tab-pane" type="button" role="tab" aria-controls="nothing-tab-pane" aria-selected="false">Italština</button>
-                          </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-<!--anglictina-->       <div class="tab-pane fade show active" id="anglictina-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#spanelstina2-tab-pane" type="button" role="tab"
+                                aria-controls="nothing-tab-pane" aria-selected="false">Španělština</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#francouzstina2-tab-pane" type="button" role="tab"
+                                aria-controls="nothing-tab-pane" aria-selected="false">Francouzština</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#italstina2-tab-pane" type="button" role="tab"
+                                aria-controls="nothing-tab-pane" aria-selected="false">Italština</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!--anglictina-->
+                        <div class="tab-pane fade show active" id="anglictina2-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Anglický název - vyplněný">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-<!--cestina-->          <div class="tab-pane fade" id="cestina-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis v angličtině">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-<!--nemcina-->          <div class="tab-pane fade" id="nemcina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis v angličtině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                        <!--cestina-->
+                        <div class="tab-pane fade" id="cestina2-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab" tabindex="0">
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Český název - vyplněný">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-<!--spanelstina-->      <div class="tab-pane fade" id="spanelstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis v češtině">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-<!--francouzstina-->    <div class="tab-pane fade" id="francouzstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis v češtině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                        <!--nemcina-->
+                        <div class="tab-pane fade" id="nemcina2-tab-pane" role="tabpanel"
+                            aria-labelledby="contact-tab" tabindex="0">
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Německý název - vyplněný">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-<!--italstina-->        <div class="tab-pane fade" id="italstina-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
                             <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Název Dokumentace" aria-label="Username"
-                                value="Název Dokumentace" aria-describedby="basic-addon1">
-                        </div>
-    
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Krátký popis" aria-label="Username"
-                                value="Krátký popis" aria-describedby="basic-addon1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Podrobnější popis</label>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea">Nějaký popis</textarea>
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis v němčině">
                             </div>
-                            <div class="form-text" id="basic-addon4"></div>
-                        </div></div>
-                      </div>
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis v němčině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                        <!--spanelstina-->
+                        <div class="tab-pane fade" id="spanelstina2-tab-pane" role="tabpanel"
+                            aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Španělský název - vyplněný">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis ve španělštině">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis ve španělštině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                        <!--francouzstina-->
+                        <div class="tab-pane fade" id="francouzstina2-tab-pane" role="tabpanel"
+                            aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Francouzský název - vyplněný">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis ve francouzštině">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis ve francouzštině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                        <!--italstina-->
+                        <div class="tab-pane fade" id="italstina2-tab-pane" role="tabpanel"
+                            aria-labelledby="contact-tab" tabindex="0">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Název Dokumentace"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Italský název - vyplněný">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Krátký popis"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    value="Nějaký popis v italštině">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="basic-url" class="form-label">Podrobnější popis</label>
+                                <div class="input-group">
+                                    <textarea class="form-control"
+                                        aria-label="With textarea">Podrobnější popis v italštině.</textarea>
+                                </div>
+                                <div class="form-text" id="basic-addon4"></div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="mb-5">
@@ -695,7 +743,7 @@
               </svg>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item border" href="#">Vše</a></li>
+              <li><a class="dropdown-item border-bottom" href="#">Vše</a></li>
               <li><a class="dropdown-item" href="#">Most Readed</a></li>
               <li><a class="dropdown-item" href="#">Further Documentation</a></li>
               <li><a class="dropdown-item" href="#">Interfaces Data-Exchange and API</a></li>
@@ -715,7 +763,7 @@
           <td>Most Readed</td>
           <td>13. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
               style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
         </tr>
         <tr>
@@ -726,7 +774,7 @@
           <td>Further Documentation</td>
           <td>17. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
               style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
         </tr>
         <tr>
@@ -737,7 +785,7 @@
           <td>Interfaces Date-Exchange and API</td>
           <td>21. 6. 2023</td>
           <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+          <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
               style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
         </tr>
       </tbody>
@@ -749,7 +797,7 @@
         <td>Further Documentation</td>
         <td>8. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -760,7 +808,7 @@
         <td>Most Readed</td>
         <td>23. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -771,7 +819,7 @@
         <td>Further Documentation</td>
         <td>9. 5. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       </tbody>
@@ -783,7 +831,7 @@
         <td>Most Readed</td>
         <td>1. 5. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -794,7 +842,7 @@
         <td>Interfaces Date-Exchange and API</td>
         <td>29. 4. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -805,7 +853,7 @@
         <td>Most Readed</td>
         <td>6. 10. 2022</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -816,7 +864,7 @@
         <td>Further Documentation</td>
         <td>1. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></a></td>
       </tr>
       </tbody>
@@ -828,7 +876,7 @@
         <td>Further Documentation</td>
         <td>7. 6. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -839,7 +887,7 @@
         <td>Interfaces Date-Exchange and API</td>
         <td>10. 3. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       <tr>
@@ -850,7 +898,7 @@
         <td>Most Readed</td>
         <td>1. 2. 2023</td>
         <td><a href="#"><img src="./../imgs/trash3.svg" alt="trash_can"></a></td>
-        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModa2"
+        <td><a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="position: relative; bottom: .4rem;"><img src="./../imgs/pencil.svg" alt="pencil"></a></td>
       </tr>
       </tbody>
